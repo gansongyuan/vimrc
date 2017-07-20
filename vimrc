@@ -64,3 +64,9 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 copen
+
+map <F5> <ESC>:AsyncRun cargo run<CR>
+map <F4> <ESC>:AsyncRun cargo build<CR>
+inoremap jj <ESC>
+let mapleader=","
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
